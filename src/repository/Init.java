@@ -3,7 +3,7 @@ package repository;
 import java.io.File;
 import java.io.IOException;
 
-public class Repository{
+public class Init {
     public static void init(){
 
         File directory = new File(".jgit/");
