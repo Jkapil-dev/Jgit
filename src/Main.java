@@ -1,7 +1,3 @@
-import java.io.File;
-import java.util.Arrays;
-import java.io.File;
-import java.io.IOException;
 import commands.CommandHandler;
 
 public class Main {
@@ -12,8 +8,10 @@ public class Main {
             return;// this is called guard clause
         }
         CommandHandler handler = new CommandHandler();
-        handler.execute(args[0]);
-
+        if(args.length>1)
+            handler.execute(args[0] , args[1]);
+        else
+            handler.execute(args[0] , null);
     }
 }
 
